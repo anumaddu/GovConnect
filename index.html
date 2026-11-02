@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="GovConnect" data-te="గోవ్‌కనెక్ట్">GovConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+    <span data-en="GOVCONNECT" data-te="గోవ్‌కనెక్ట్">GOVCONNECT</span>
+
+    <p id="tagline"
+       data-en="Digital India | Government Services"
+       data-te="డిజిటల్ ఇండియా | ప్రభుత్వ సేవలు">
+       Digital India | Government Services
+    </p>
+</div>
+
+    <nav>
+        <a href="#" data-en="Home" data-te="హోమ్">Home</a>
+
+        <a href="#about" data-en="About Us" data-te="మా గురించి">About Us</a>
+
+        <a href="#schemes" data-en="Schemes" data-te="పథకాలు">Schemes</a>
+
+        <a href="#track" data-en="Track Request" data-te="అభ్యర్థన స్థితి">Track Request</a>
+
+        <a href="#contact" data-en="Contact" data-te="సంప్రదించండి">Contact</a>
+    </nav>
+
+    <div class="header-buttons">
+
+        <button class="language" onclick="setLanguage('te')">తెలుగు</button>
+
+        <button class="language" onclick="setLanguage('en')">English</button>
+
+        <button class="login-btn" onclick="openLogin()" data-en="Login" data-te="లాగిన్">Login</button>
+
+        <button class="register-btn" onclick="openRegister()" data-en="Register" data-te="నమోదు">Register</button>
+
+    </div>
+
+</header>
+
+
+<section class="hero">
+
+    <h1 data-en="Welcome to GovConnect"
+        data-te="గోవ్‌కనెక్ట్‌కు స్వాగతం">
+        Welcome to GovConnect
+    </h1>
+
+    <h2 data-en="Your Gateway to Government Welfare Schemes"
+        data-te="ప్రభుత్వ సంక్షేమ పథకాలకు మీ వేదిక">
+        Your Gateway to Government Welfare Schemes
+    </h2>
+
+    <p data-en="Discover government schemes and access public services easily."
+       data-te="ప్రభుత్వ పథకాలను తెలుసుకోండి మరియు సేవలను సులభంగా పొందండి.">
+       Discover government schemes and access public services easily.
+    </p>
+
+    <button data-en="Explore Schemes"
+            data-te="పథకాలను చూడండి">
+        Explore Schemes
+    </button>
+
+</section>
+
+
+<section id="about" class="schemes">
+
+    <h1 data-en="About Us" data-te="మా గురించి">About Us</h1>
+
+    <p data-en="GovConnect helps people understand government welfare schemes and services."
+       data-te="ప్రభుత్వ సంక్షేమ పథకాలు మరియు సేవలను ప్రజలు సులభంగా అర్థం చేసుకోవడానికి GovConnect సహాయపడుతుంది.">
+       GovConnect helps people understand government welfare schemes and services.
+    </p>
+
+</section>
+
+
+<section id="schemes" class="schemes">
+
+    <h1 data-en="Government Schemes" data-te="ప్రభుత్వ పథకాలు">
+        Government Schemes
+    </h1>
+
+    <div class="scheme-container">
+
+        <div class="scheme-card">
+
+            <h3 data-en="PM Kisan Scheme" data-te="పీఎం కిసాన్ పథకం">PM Kisan Scheme</h3>
+
+            <p data-en="Financial support for eligible farmer families."
+               data-te="అర్హులైన రైతు కుటుంబాలకు ఆర్థిక సహాయం.">
+               Financial support for eligible farmer families.
+            </p>
+
+            <button data-en="Learn More" data-te="మరింత తెలుసుకోండి">Learn More</button>
+
+        </div>
+
+
+        <div class="scheme-card">
+
+            <h3 data-en="Ayushman Bharat" data-te="ఆయుష్మాన్ భారత్">Ayushman Bharat</h3>
+
+            <p data-en="Health coverage for eligible families."
+               data-te="అర్హులైన కుటుంబాలకు ఆరోగ్య బీమా సౌకర్యం.">
+               Health coverage for eligible families.
+            </p>
+
+            <button data-en="Learn More" data-te="మరింత తెలుసుకోండి">Learn More</button>
+
+        </div>
+
+
+        <div class="scheme-card">
+
+            <h3 data-en="PM Awas Yojana" data-te="పీఎం ఆవాస్ యోజన">PM Awas Yojana</h3>
+
+            <p data-en="Housing assistance for eligible families."
+               data-te="అర్హులైన కుటుంబాలకు గృహ నిర్మాణ సహాయం.">
+               Housing assistance for eligible families.
+            </p>
+
+            <button data-en="Learn More" data-te="మరింత తెలుసుకోండి">Learn More</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="track" class="schemes">
+
+    <h1 data-en="Track Your Request" data-te="మీ అభ్యర్థనను ట్రాక్ చేయండి">
+        Track Your Request
+    </h1>
+
+    <p data-en="Check the status of your government service request."
+       data-te="మీ ప్రభుత్వ సేవ అభ్యర్థన స్థితిని తెలుసుకోండి.">
+       Check the status of your government service request.
+    </p>
+<div class="track-box">
+
+    <input type="text" id="requestId"
+        data-en-placeholder="Enter your Request ID"
+        data-te-placeholder="మీ అభ్యర్థన ID నమోదు చేయండి"
+        placeholder="Enter your Request ID">
+
+    <button onclick="trackRequest()"
+        data-en="Track Status"
+        data-te="స్థితిని తనిఖీ చేయండి">
+        Track Status
+    </button>
+
+    <div id="trackResult"></div>
+
+</div>
+</section>
+
+
+<section id="contact" class="schemes">
+
+    <h1 data-en="Contact Us" data-te="మమ్మల్ని సంప్రదించండి">
+        Contact Us
+    </h1>
+
+    <p data-en="We are here to help you."
+       data-te="మీకు సహాయం చేయడానికి మేము సిద్ధంగా ఉన్నాము.">
+       We are here to help you.
+    </p>
+
+</section>
+
+
+<div id="loginForm" class="form-box">
+
+    <h2 data-en="Login to GovConnect" data-te="GovConnect లో లాగిన్ చేయండి">
+        Login to GovConnect
+    </h2>
+
+    <input type="tel" id="loginMobile"
+           data-en-placeholder="Mobile Number"
+           data-te-placeholder="మొబైల్ నంబర్"
+           placeholder="Mobile Number">
+
+    <input type="password" id="loginPassword"
+           data-en-placeholder="Password"
+           data-te-placeholder="పాస్‌వర్డ్"
+           placeholder="Password">
+
+    <button data-en="Login" data-te="లాగిన్">Login</button>
+
+    <button onclick="closeForms()" data-en="Close" data-te="మూసివేయండి">Close</button>
+
+</div>
+
+
+<div id="registerForm" class="form-box">
+
+    <h2 data-en="Create Your Account" data-te="మీ ఖాతాను సృష్టించండి">
+        Create Your Account
+    </h2>
+
+    <input type="text"
+           data-en-placeholder="Full Name"
+           data-te-placeholder="పూర్తి పేరు"
+           placeholder="Full Name">
+
+    <input type="tel"
+           data-en-placeholder="Mobile Number"
+           data-te-placeholder="మొబైల్ నంబర్"
+           placeholder="Mobile Number">
+
+    <input type="password"
+           data-en-placeholder="Create Password"
+           data-te-placeholder="పాస్‌వర్డ్ సృష్టించండి"
+           placeholder="Create Password">
+
+    <button data-en="Register" data-te="నమోదు చేయండి">Register</button>
+
+    <button onclick="closeForms()" data-en="Close" data-te="మూసివేయండి">Close</button>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

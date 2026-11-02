@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+}
+
+header {
+    background-color: #123c69;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo p {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #dce6f1;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+.language {
+    background-color: white;
+    color: #123c69;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    color: #123c69;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    color: #345678;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #123c69;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.schemes {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #eaf2f8;
+}
+
+.schemes h1 {
+    color: #123c69;
+    margin-bottom: 10px;
+}
+
+.schemes h2 {
+    color: #345678;
+    margin-bottom: 40px;
+}
+
+.scheme-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.scheme-card {
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.scheme-card h3 {
+    color: #123c69;
+    margin-bottom: 20px;
+}
+
+.scheme-card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.scheme-card button {
+    background-color: #123c69;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.login-btn {
+    background-color: white;
+    color: #123c69;
+    padding: 10px 18px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-btn {
+    background-color: #087f5b;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+    text-align: center;
+    z-index: 1000;
+}
+
+.form-box h2 {
+    color: #123c69;
+    margin-bottom: 20px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-box button {
+    margin: 8px;
+    cursor: pointer;
+}
+/* Track Request Design */
+.track-box {
+    background: #f4f8ff;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.track-box input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.track-box button {
+    background: #0756a5;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.track-box button:hover {
+    background: #003d7a;
+}
+
+#trackResult {
+    margin-top: 18px;
+    font-weight: bold;
+    font-size: 17px;
+}
